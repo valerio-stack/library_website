@@ -1,0 +1,15 @@
+.body_container {
+    height: 95vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3.8fr 8fr;
+    grid-template-rows: 100%;
+    background-color: rgb(242, 242, 242);
+}
+
+.left_section_body_container {
+    border-right: 2px solid black;
+}
+
+.right_section_body_container {
+}

@@ -1,0 +1,164 @@
+@keyframes show_notification {
+    0% {
+        left: -230px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes hide_notification {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: -230px;
+    }
+}
+
+
+body {
+    position: relative;
+}
+
+.notification_book_added {
+    position: fixed;
+    bottom: 15px;
+    width: 230px;
+    left: -230px;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    height: 70px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+}
+
+.left_side_notification {
+    position: absolute;
+    left: 0px;
+    background-color: rgb(16, 235, 136);
+    height: 100%;
+    width: 10px;
+}
+
+.notification_book_added p {
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+    max-width: 190px;
+}
+
+
+.grid_container {
+    width: 100%;
+    padding-top: 30px;
+    justify-content: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 290px);
+    column-gap: 15px;
+    row-gap: 30px;
+}
+
+.grid_container a {
+    text-decoration: none;
+}
+
+.link_wrapper {
+    position: relative;
+    height: fit-content;
+}
+
+.book_container1 {
+    display: grid;
+    grid-template-columns: 150px 140px;
+    grid-template-rows: 190px;
+    background-color: bisque;
+    cursor: pointer;
+    position: relative;
+}
+
+.book_container1:hover .image_2 {
+    transform: translateY(-3px);
+}
+
+.book_container1:hover .book_info2 .plus_button_container3 {
+    transform: translateY(-3px);
+}
+
+.book_container1:hover p:not(i), .book_container1:hover h2 {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.4);
+}
+
+.book_container1 div {
+    background-color: rgb(225, 225, 225);
+}
+
+.book_cover2 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.book_container1 img {
+    width: 120px;
+    height: 170px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    transition: 0.15s ease-in-out;
+}
+
+.book_info2 {
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.book_info2 h2 {
+    color: rgb(0, 101, 149);
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 800;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 5px;
+}
+
+.book_info2 p {
+    color: black;
+    background-color: transparent;
+    font-size: 15.5px;
+    max-width: 85%;
+    margin-bottom: 10px;
+}
+
+.plus_button_container3 {
+    position: absolute;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    bottom: 8px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(215, 48, 68);
+    transition: 0.15s ease-in-out;
+}
+
+.plus_button_container3 i {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-size: 15px;
+    transition: 0.15s ease-in-out;
+}
