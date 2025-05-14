@@ -75,7 +75,7 @@ body {
 
 .book_container1 {
     display: grid;
-    grid-template-columns: 150px 140px;
+    grid-template-columns: 20fr 80fr;
     grid-template-rows: 190px;
     background-color: bisque;
     cursor: pointer;
@@ -103,7 +103,8 @@ body {
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: end;
+    padding-left: 15px;
 }
 
 .book_container1 img {
@@ -117,6 +118,7 @@ body {
 .book_info2 {
     padding-top: 10px;
     border-radius: 5px;
+    padding-left: 15px;
 }
 
 .book_info2 h2 {
